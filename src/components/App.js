@@ -6,12 +6,12 @@ import {
 
 import {Container} from "react-bootstrap"
 
-import Home from './Home'
-import AboutUs from './AboutUs'
-import ViewForm from './ViewForm'
-import NotFound from './404'
+import Home from './pages/Home'
+import AboutUs from './pages/AboutUs'
+import ViewForm from './pages/application-form/ViewForm'
+import NotFound from './pages/error/404'
 
-import NavigationBar from "./NavigationBar"
+import NavigationBar from "./navs/NavigationBar"
 
 function App() {
   return (
