@@ -1,8 +1,4 @@
-import {
-  BrowserRouter,
-  Switch,
-  Route,
-} from "react-router-dom";
+import {BrowserRouter, Switch, Route} from "react-router-dom";
 
 import {Container} from "react-bootstrap"
 
