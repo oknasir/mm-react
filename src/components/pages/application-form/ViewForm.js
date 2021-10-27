@@ -1,4 +1,4 @@
-import {Pagination} from '../../helpers'
+import {Pagination, DataTable} from '../../helpers'
 
 function ViewForm() {
   return (
