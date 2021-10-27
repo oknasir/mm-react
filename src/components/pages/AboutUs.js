@@ -1,8 +1,12 @@
+import NavigationBar from "../navs/NavigationBar"
+
 function AboutUs() {
   return (
-    <div className="App">
+    <>
+      <NavigationBar />
+
       <h1>About page is here</h1>
-    </div>
+    </>
   );
 }
 

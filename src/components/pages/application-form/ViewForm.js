@@ -1,8 +1,11 @@
 import {Pagination, DataTable} from '../../helpers'
+import NavigationBar from "../../navs/NavigationBar"
 
 function ViewForm() {
   return (
-    <div className="App">
+    <>
+      <NavigationBar />
+
       <div class="list-group">
         <a href="#" class="list-group-item list-group-item-action" aria-current="true">
           The current link item
@@ -14,7 +17,7 @@ function ViewForm() {
 
       <DataTable />
       <Pagination />
-    </div>
+    </>
   );
 }
 
