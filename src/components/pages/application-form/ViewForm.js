@@ -15,31 +15,31 @@ function ViewForm() {
 
   const fetchData = () => {
     const data = [
-      {id: 1, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 2, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 3, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 4, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 5, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 6, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 7, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 8, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 9, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 10, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 11, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 12, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 13, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 14, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 15, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 16, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 17, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 18, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 19, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 20, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 21, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 22, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 23, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 24, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
-      {id: 25, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir'},
+      {id: 1, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 10},
+      {id: 2, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 3, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 8},
+      {id: 4, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 5, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 6, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 7},
+      {id: 7, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 8, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 9, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 1},
+      {id: 10, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 11, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 5},
+      {id: 12, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 19},
+      {id: 13, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 14, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 20},
+      {id: 15, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 15},
+      {id: 16, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 17, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 18, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 18},
+      {id: 19, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 20, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 13},
+      {id: 21, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 6},
+      {id: 22, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 11},
+      {id: 23, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 9},
+      {id: 24, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 12},
+      {id: 25, first_name: 'Nasir', last_name: 'Mehmood', username: 'oknasir', age: 16},
     ]
 
     setApplications(data)
@@ -91,6 +91,15 @@ function ViewForm() {
   - reverse
   - some
   - sort
+
+
+data.filter((item) => {
+  return item.id > 5 && item.id < 10
+})
+
+data.filter((item) => (item.id > 5 && item.id < 10)).map((item) => (item.first_name))
+
+data.splice(data.findIndex((item) => (item.id===14)), 1)
   */
 
   return (

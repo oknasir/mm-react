@@ -1,0 +1,20 @@
+.btn-orange {
+  background-color: var(--bs-orange);
+  border-color: var(--bs-orange);
+  color: var(--bs-white);
+  text-transform: uppercase;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.btn-orange:hover {
+  background-color: var(--bs-white);
+  border-color: var(--bs-white);
+  color: var(--bs-orange);
+}
+
+.display-xxl {
+  font-size: 18rem;
+  line-height: 17rem;
+  font-weight: lighter;
+}
