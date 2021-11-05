@@ -1,8 +1,14 @@
 import {Button} from "react-bootstrap";
 import {useHistory} from "react-router-dom"
+import {useEffect} from "react";
 
 function NotFound() {
   const history = useHistory();
+
+  useEffect(()=>{
+    document.title = 'Not Found | Nasir Mehmood\'s Resume'
+  }, [])
+
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
       <div className="text-center">
@@ -22,4 +28,3 @@ function NotFound() {
 }
 
 export default NotFound;
-  

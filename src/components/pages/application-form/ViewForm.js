@@ -11,6 +11,7 @@ function ViewForm() {
 
   useEffect(()=>{
     fetchData()
+    document.title = 'Application Form\'s List | Nasir Mehmood\'s Resume'
   }, [])
 
   const fetchData = () => {
@@ -54,7 +55,7 @@ function ViewForm() {
       // const name = `${user.first_name} ${user.last_name}`
 
       user.name = `${user.first_name} ${user.last_name}`
-      
+
       // console.log(name)
 
       // if(index===5){
@@ -62,7 +63,7 @@ function ViewForm() {
       // }
       return user
     });
-    
+
     // user ? user.id : null
  /*
     if(user) {
@@ -109,7 +110,7 @@ data.splice(data.findIndex((item) => (item.id===14)), 1)
       <Button variant="success" onClick={testLoops}>Run Loop</Button>
 
       {results}
-      
+
       <DataTable data={applications} />
 
       <Pagination />

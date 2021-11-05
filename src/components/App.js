@@ -1,7 +1,5 @@
 import {BrowserRouter, Switch, Route} from "react-router-dom";
 
-import {Container} from "react-bootstrap"
-
 import Home from './pages/Home'
 import AboutUs from './pages/AboutUs'
 import ViewForm from './pages/application-form/ViewForm'
@@ -12,7 +10,7 @@ function App() {
     <BrowserRouter>
       <Switch>
         <Route exact path="/">
-          <Home />
+          <Home title="Nasir Mehmood's Resume" />
         </Route>
         <Route path="/about-us">
           <AboutUs />

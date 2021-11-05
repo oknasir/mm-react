@@ -1,5 +1,5 @@
 export const DataTable = ({data}) => (
-    <table class="table">
+    <table className="table">
         <thead>
             <tr>
             <th scope="col">#</th>
@@ -10,7 +10,7 @@ export const DataTable = ({data}) => (
             </tr>
         </thead>
         <tbody>
-            {data.map((item) => (
+            {data.length && data.map((item) => (
                 <tr>
                     <th scope="row">{item.id}</th>
                     <td>{item.first_name}</td>

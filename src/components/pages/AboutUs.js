@@ -1,13 +1,18 @@
 import NavigationBar from "../navs/NavigationBar"
+import {useEffect} from "react";
 
 function AboutUs() {
-  return (
-    <>
-      <NavigationBar />
+    useEffect(() => {
+        document.title = 'About Us | Nasir Mehmood\'s Resume'
+    }, [])
 
-      <h1>About page is here</h1>
-    </>
-  );
+    return (
+        <>
+            <NavigationBar/>
+
+            <h1>About page is here</h1>
+        </>
+    );
 }
 
 export default AboutUs;

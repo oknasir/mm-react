@@ -4,8 +4,13 @@ import {faMapMarkerAlt, faMobileAlt} from "@fortawesome/free-solid-svg-icons"
 import profilePicture from '../../img/profile.jpg'
 
 import '../../css/resume.css'
+import {useEffect} from "react";
 
-function Home() {
+function Home({title}) {
+    useEffect(() => {
+        document.title = title
+    }, [])
+
     return (
         <div className="container-fluid overcover">
             <div className="container profile-box">
@@ -14,7 +19,7 @@ function Home() {
                         <ul className="ps-0">
                             <li>
                                 <div className="icon">
-                                    <i className="d-block"><FontAwesomeIcon icon={faMapMarkerAlt} /></i>
+                                    <i className="d-block"><FontAwesomeIcon icon={faMapMarkerAlt}/></i>
                                 </div>
                                 <div className="detail">
                                     First Floor,Vincent Plaza, Toranto, Canada
@@ -23,7 +28,7 @@ function Home() {
 
                             <li>
                                 <div className="icon">
-                                    <FontAwesomeIcon icon={faMobileAlt} />
+                                    <FontAwesomeIcon icon={faMobileAlt}/>
                                 </div>
                                 <div className="detail">
                                     +123 8767 5465
