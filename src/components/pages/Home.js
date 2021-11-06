@@ -1,5 +1,5 @@
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
-import {faMapMarkerAlt, faMobileAlt} from "@fortawesome/free-solid-svg-icons"
+import {faMapMarkerAlt, faMobileAlt, faGlobeAmericas, faEnvelope} from "@fortawesome/free-solid-svg-icons"
 
 import profilePicture from '../../img/profile.jpg'
 
@@ -28,7 +28,7 @@ function Home({title}) {
 
                             <li>
                                 <div className="icon">
-                                    <FontAwesomeIcon icon={faMobileAlt}/>
+                                    <i className="d-block"><FontAwesomeIcon icon={faMobileAlt}/></i>
                                 </div>
                                 <div className="detail">
                                     +123 8767 5465
@@ -36,7 +36,7 @@ function Home({title}) {
                             </li>
                             <li>
                                 <div className="icon">
-                                    <i className="far fa-envelope"></i>
+                                    <i className="d-block"><FontAwesomeIcon icon={faEnvelope}/></i>
                                 </div>
                                 <div className="detail">
                                     suppoet@smarteyeapps.com
@@ -44,7 +44,7 @@ function Home({title}) {
                             </li>
                             <li>
                                 <div className="icon">
-                                    <i className="fas fa-globe-americas"></i>
+                                    <i className="d-block"><FontAwesomeIcon icon={faGlobeAmericas}/></i>
                                 </div>
                                 <div className="detail">
                                     www.smarteyeapps.com
