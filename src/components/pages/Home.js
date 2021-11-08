@@ -9,7 +9,7 @@ import {useEffect} from "react";
 function Home({title}) {
     useEffect(() => {
         document.title = title
-    }, [])
+    }, [title])
 
     return (
         <div className="container-fluid overcover">

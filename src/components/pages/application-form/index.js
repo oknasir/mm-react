@@ -10,18 +10,21 @@ import {ThePolicy} from "./stepper/step3";
 import {FormSummary} from "./stepper/step4";
 
 const stepper = [
-    {title: 'General Questions', icon: <FontAwesomeIcon icon={faQuestion}/>, component: <GeneralQuestions/>},
+    {title: 'General Questions', icon: <FontAwesomeIcon icon={faMobileAlt}/>, component: <GeneralQuestions/>},
     {title: 'Personal Details', icon: <FontAwesomeIcon icon={faQuestion}/>, component: <PersonalDetails/>},
     {title: 'The Policy', icon: <FontAwesomeIcon icon={faQuestion}/>, component: <ThePolicy/>},
     {title: 'Form Summary', icon: <FontAwesomeIcon icon={faQuestion}/>, component: <FormSummary/>},
 ]
 
 function ApplicationForm() {
+    const maxStep = stepper.length - 1
     const [step, setStep] = useState(0)
 
     useEffect(() => {
         document.title = 'Application Form | Nasir Mehmood\'s Resume'
     }, [])
+
+    const nextStep = () => setStep(step >= maxStep ? maxStep : (step + 1))
 
     return (
         <>
@@ -35,14 +38,14 @@ function ApplicationForm() {
                         ))}
                     </Card.Header>
                     <Card.Body>
-                        {stepper[step]?.component}
+                        {stepper[step].component}
                     </Card.Body>
                     <Card.Footer className="py-3 d-flex justify-content-between">
                         <Button onClick={() => setStep(step <= 0 ? 0 : (step - 1))} disabled={step === 0} variant="primary">Previous</Button>
 
                         <div>
-                            <Button onClick={() => setStep(step >= 3 ? 3 : (step + 1))} variant="secondary" className="me-3">Skip</Button>
-                            <Button onClick={() => setStep(step >= 3 ? 3 : (step + 1))} variant="success">{step === 3 ? 'Finish' : 'Next'}</Button>
+                            <Button onClick={nextStep} variant="secondary" className="me-3">Skip</Button>
+                            <Button onClick={nextStep} variant="success">{step === maxStep ? 'Finish' : 'Next'}</Button>
                         </div>
                     </Card.Footer>
                 </Card>

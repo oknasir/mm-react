@@ -7,7 +7,7 @@ import NavigationBar from "../../navs/NavigationBar"
 
 function ViewForm() {
   const [applications, setApplications] = useState([])
-  const [results, setResults] = useState(null)
+  const [results] = useState(null)
 
   useEffect(()=>{
     fetchData()
